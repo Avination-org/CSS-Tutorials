@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Element Animation</title>
+  <style>
+    body{
+      margin: 0;
+      padding:0;
+    }
+    .container{
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      top:50%;
+    }
+    .icon-wrapper{
+      width:250px;
+      height:100px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      margin: auto;
+    }
+    .icon{
+      display: inline-block;
+      height: 60px;
+      margin: 10px;
+      animation: float 5s ease-in-out infinite;
+    }
+    .facebook{
+      animation-delay: 1s;
+
+    }
+    .instagram{
+      animation-delay: 2s;
+    }
+    h1{
+      text-align: center;
+      font-size: 8rem;
+      background: linear-gradient(90.69deg, #5AFF15 2.06%, rgba(58, 230, 20, 0.645833) 50.44%, rgba(0, 183, 18, 0) 96.84%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+
+    }
+    @keyframes float{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-20px);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon-wrapper">
+      <img class="icon facebook" src="./icons/facebook.png" alt="facebook">
+      <img class="icon instagram" src="./icons/instagram.png" alt="instagram">
+      <img class="icon whatsapp" src="./icons/whatsapp.png" alt="whatsapp">
+    </div>
+    <h1> Floating Element Animation</h1>
+  </div>
+  
+</body>
+</html>
