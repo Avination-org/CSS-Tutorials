@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Avination</h1>
+    <p id="dots"></p>
+  </div>
+  <script>
+    p = document.getElementById("dots");
+    setInterval(()=> {
+
+      setTimeout(() => {
+        p.innerHTML = ".";
+      }, 500);
+
+      setTimeout(() => {
+        p.innerHTML = "..";
+      }, 1000);
+      setTimeout(() => {
+        p.innerHTML = "...";
+      }, 1500);
+      setTimeout(() => {
+        p.innerHTML = "....";
+      }, 2000);
+    },2000);
+  </script>
+  
+</body>
+</html>
