@@ -1,0 +1,92 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css?family=Robik:400,600,700,800');
+
+
+/* Global */
+:root{
+   /* Fonts */
+   --primary-font: "Rubik";
+
+   /* Colors */
+   --gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+   --instagram: #c13584;
+   --facebook: #4267B2;
+   --youtube: #FF0000;
+   --github: #333;
+}
+
+/* Base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+
+}
+body{
+  height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: var(--gradient);
+   background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Button */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  background-color: #fff;
+  width: 80px;
+  height:80px;
+  border-radius:50px;
+  margin: 0 5px;
+  padding: 18px 0;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0,0.1);
+  overflow: hidden;
+  transition: all .3s ease-out;
+}
+.button_link{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button_icon{
+  font-size: 40px;
+}
+.button_name{
+  display: none;
+  font-size: 20px;
+  font-weight:500;
+}
+
+/* Hover */
+
+.button:hover{
+  width: 180px;
+}
+.button:hover .button_name{
+  display: inline-block;
+}
+.button:nth-child(1):hover .button_link{
+  color: var(--instagram);
+}
+.button:nth-child(2):hover .button_link{
+  color: var(--facebook);
+}
+.button:nth-child(3):hover .button_link{
+  color: var(--youtube);
+}
+.button:nth-child(4):hover .button_link{
+  color: var(--github);
+}
