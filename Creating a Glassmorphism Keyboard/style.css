@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  cursor: default;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background:#fff;
+}
+.keybord-body{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position:relative;
+  width: 1000px;
+  height: 400px;
+  background: url(https://b.rgbimg.com/users/x/xy/xymonau/600/o14tpzA.jpg) no-repeat center center/cover;
+  border-radius :20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2),
+              0 -1px 2px rgba(255,255,255, 0.8);
+}
+.keybord{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width:100%;
+}
+.row{
+  margin: 10px 0;
+}
+button{
+  margin: 2px;
+  padding: 15px 20px;
+  border:none;
+  outline: none;
+  background:rgba(255,255,255, 0.3);
+  backdrop-filter: blur(70px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2),
+              0 -1px 2px rgba(255,255,255, 0.8);
+  font-size: 23px;
+  border-radius: 8px;
+}
+.space{
+  width:400px;
+}
+.shift{
+  width: 140px;
+
+}
+.tab{
+  width: 110px;
+}
+button:active{
+  transform: scale(0.9);
+  box-shadow: 3px 3px 5px #fff,
+              -3px -3px 5px #555;
+}
