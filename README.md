@@ -18,3 +18,8 @@ This is the my Youtube Videos projects
 - [Code Page](https://github.com/Avination-org/CSS-Tutorials/tree/main/Creating%20a%20Glassmorphism%20Keyboard "Creating a Glassmorphism Keyboard")
 - [Code Live Page](https://css.avination.in/Creating%20a%20Glassmorphism%20Keyboard "Creating a Glassmorphism Keyboard")
 - [Video Link](https://youtu.be/ITuDoix097s "Creating a Glassmorphism Keyboard")
+
+## Awesome StopWatch
+- [Code Page](https://github.com/Avination-org/CSS-Tutorials/tree/main/Awesome%20StopWatch "Awesome StopWatch")
+- [Code Live Page](https://css.avination.in/Awesome%20StopWatch"Awesome StopWatch")
+- [Video Link](https://youtu.be/ITuDoix097s "Creating a Glassmorphism Keyboard")

@@ -1,0 +1,83 @@
+:root{
+  --liner-gradient: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+  --liner-gradient2: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+  --liner-gradient3: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+  --liner-gradient4: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
+}
+
+html{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+  background: url(https://b.rgbimg.com/users/x/xy/xymonau/600/o14tpzA.jpg) no-repeat center center/cover;
+}
+#demo{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position:relative;
+  text-align: center;
+  font-size: 3rem;
+}
+#stopWatch{
+  display: flex;
+  font-size: 6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: var(--liner-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btns{
+  margin-top: 2rem;
+}
+button{
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+}
+button:last-of-type {
+  margin-right:0;
+}
+button[disabled]{
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+button#start{
+  background: var(--liner-gradient2);
+}
+button#stop{
+  background: var(--liner-gradient3);
+}
+button#reset{
+  background: var(--liner-gradient4);
+}
+@media screen and (max-width:900px) {
+  html{
+    font-size: 1.3rem;
+  }
+  
+}
+@media screen and (max-width:630px) {
+  html{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:430px) {
+  html{
+    font-size: 0.6rem;
+  }
+}
