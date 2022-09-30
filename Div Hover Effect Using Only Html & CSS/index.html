@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 90%;
+      padding: 20px;
+      margin:100px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .box{
+      width:250px;
+      margin: 0 10px;
+      box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+      transition: 1s;
+    }
+    .box img{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .box:hover{
+      transform: scale(1.2);
+      z-index: index 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- --box-- -->
+    <div class="box">
+      <img src="img/a.jpg" alt="img1">
+    </div>
+    <!-- --box-- -->
+    <div class="box">
+      <img src="img/b.jpg" alt="img1">
+    </div>
+    <!-- --box-- -->
+    <div class="box">
+      <img src="img/c.jpg" alt="img1">
+    </div>
+    <!-- --box-- -->
+    <div class="box">
+      <img src="img/d.jpg" alt="img1">
+    </div>
+    <!-- --box-- -->
+    <div class="box">
+      <img src="img/e.jpg" alt="img1">
+    </div>
+  </div>
+  
+</body>
+</html>
