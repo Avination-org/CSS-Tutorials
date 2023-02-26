@@ -1,6 +1,6 @@
 # CSS-Tutorials
 This is the my Youtube Videos projects
-- [Avination.in](https://avination.in)
+- [Avination.in](https://css.avination.in)
 
 <br/><br/>
 [![Avination](https://drive.google.com/file/d/1oeWvnKxT41qgxuOtGq_G6utsV-3pauDg/view?usp=sharing)](https://www.youtube.com/c/Avination_in "youtube.com/c/Avination_in")
