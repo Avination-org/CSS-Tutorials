@@ -1,0 +1,116 @@
+:root {
+    --text_Primary: #4d4d4d;
+    --text_Secondary: #5E5E5E;
+}
+
+* {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    padding: 100px;
+}
+
+.grid {
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.grid .item {
+    width: 286px;
+    height: 295px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.grid .item .top {
+    height: 55%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.grid .item .top img{
+    width: 100%;
+    height: 100%;
+}
+.grid .item .top .videoNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 27px;
+    display: grid;
+    color: var(--text_Secondary);
+    place-items: center;
+    background: #ECECEC;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 5px 0px;
+}
+
+.grid .item .top .timing {
+    position: absolute;
+    color: var(--text_Secondary);
+    bottom: 0;
+    right: 0;
+    display: grid;
+    font-size: x-small;
+    font-weight: 600;
+    place-items: center;
+    background: #ECECEC;
+    border-radius: 10px 0px 10px 0px;
+    width: 78px;
+    height: 20px;
+}
+
+.grid .item .middle {
+    height: 30%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grid .item .middle .title {
+    font-size: medium;
+    font-weight: 600;
+    color: var(--text_Primary);
+}
+
+.grid .item .middle .description {
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    /* white-space: nowrap; */
+    color: var(--text_Secondary);
+}
+
+.grid .item .bottom {
+    height: 15%;
+    padding: 0% 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid .item .bottom button {
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text_Secondary);
+    padding: 6px 11px;
+    min-width: 50px;
+    border: none;
+}
