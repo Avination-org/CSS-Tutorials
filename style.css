@@ -13,17 +13,23 @@
 .container {
     width: 100vw;
     height: 100%;
-    padding: 100px;
+    padding: 30px;
+   
 }
 
-.grid {
-    margin: auto;
+.main {
+    
     display: flex;
-    gap: 50px;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;    
+    align-items: flex-start;
+    flex-grow: 0;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr ; */
 }
 
-.grid .item {
+.main .card {
     width: 286px;
     height: 295px;
     overflow: hidden;
@@ -32,31 +38,39 @@
     border-radius: 10px;
 }
 
-.grid .item .top {
+.main   .card .top {
     height: 55%;
+    overflow: hidden;
     position: relative;
     border-radius: 10px;
 }
 
-.grid .item .top img{
+.main .card .top img{
     width: 100%;
     height: 100%;
 }
-.grid .item .top .videoNumber {
+.main .card .top .videoNumber {
     position: absolute;
     top: 0;
     left: 0;
     width: 68px;
     height: 27px;
-    display: grid;
+    display: flex;
     color: var(--text_Secondary);
-    place-items: center;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
     background: #ECECEC;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 5px 0px;
 }
+.main .card .top .videoNumber::before{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: "#";
+    font-weight: 500;
+}
 
-.grid .item .top .timing {
+.main .card .top .timing {
     position: absolute;
     color: var(--text_Secondary);
     bottom: 0;
@@ -71,7 +85,7 @@
     height: 20px;
 }
 
-.grid .item .middle {
+.main .card .middle {
     height: 30%;
     padding: 5%;
     display: flex;
@@ -79,13 +93,16 @@
     gap: 5px;
 }
 
-.grid .item .middle .title {
+.main .card .middle .title {
     font-size: medium;
     font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: var(--text_Primary);
 }
 
-.grid .item .middle .description {
+.main .card .middle .description {
     font-size: 14px;
     width: 100%;
     overflow: hidden;
@@ -95,16 +112,17 @@
     color: var(--text_Secondary);
 }
 
-.grid .item .bottom {
+.main .card .bottom {
     height: 15%;
     padding: 0% 5%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 0 8px;
+    justify-content: left;
 }
 
-.grid .item .bottom button {
+.main .card .bottom button {
     background: #F5F5F5;
     border-radius: 5px;
     font-size: 12px;
@@ -113,4 +131,102 @@
     padding: 6px 11px;
     min-width: 50px;
     border: none;
+}
+/* footerr */
+
+.footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    background-color: #122B41;
+}
+.footer .left,
+.footer .right{
+    height: 100%;
+    position: relative;
+    width: 50%;
+}
+
+.footer .left h1{
+    font-size: 40px;
+    color: #fff;
+    top: 20px;
+    left: 60px;
+    position: absolute;
+}
+.footer .left img{
+    position: absolute;
+    bottom:0;
+
+}
+.footer .left p{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 340px;
+    font-size: larger;
+}
+.footer .right{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .right .QRbox{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer .right .QRbox .logo{
+    width: 20px;
+}
+.footer .right .QRbox p{
+color:#fff;
+text-decoration: none;
+}
+.footer .right .QRbox p a{
+    color:#056ac2;
+    text-decoration: none;
+}
+@media only screen and (max-width: 992px) {
+.footer .left p{
+    display: none;
+}
+}
+@media only screen and (max-width: 650px) {
+    .footer .right{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .right .QRbox .QRcode{
+        width: 80px;
+    }
+    .footer .right .QRbox{
+        align-items: center;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .footer .left{
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .right {
+        flex-direction: row;
+    }
+    .footer .left img{
+        display: none;
+    }
 }
