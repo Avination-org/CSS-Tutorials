@@ -5,6 +5,7 @@ const data = [
         title: "Floating Element Animation",
         Codepage: "Hello",
         codelive: "hello",
+        link:"https://github.com",
         image: "",
         button: [
             "HTML",
@@ -14,9 +15,9 @@ const data = [
         ]
     },
     {
-         no: "1",
+        no: "2",
         title: "Creating a Glassmorphism Keyboard",
-        // image:"https://github.com/Avination-org/CSS-Tutorials/blob/main/Floating%20Element%20Animation.jpg",
+        image:"https://github.com/Avination-org/CSS-Tutorials/blob/main/Floating%20Element%20Animation.jpg",
         Codepage: "Hello",
         codelive: "hello",
         image: "/Social Media Button Hover Effect/png1.jpg",
@@ -29,11 +30,11 @@ const data = [
 
     },
     {
-         no: "1",
+         no: "3",
         title: "Create a Awesome  Movie Card UI  Using Html & Css  Border Animation CSS  Quick Animation",
         Codepage: "Hello",
         codelive: "hello",
-        image: "new",
+        image: "https://github.com/Avination-org/CSS-Tutorials/blob/main/Floating%20Element%20Animation.jpg",
         button: [
             "HTML",
             "CSS",
@@ -41,7 +42,7 @@ const data = [
         ]
     },
     {
-         no: "1",
+         no: "4",
         Codepage: "Hello",
         codelive: "hello",
         image: "new",
@@ -52,7 +53,7 @@ const data = [
         ]
     },
     {
-         no: "1",
+         no: "5",
         Codepage: "Hello",
         codelive: "hello",
         image: "new",
@@ -62,7 +63,7 @@ const data = [
         ]
     },
     {
-         no: "1",
+         no: "6",
         Codepage: "Hello",
         codelive: "hello",
         image: "new",

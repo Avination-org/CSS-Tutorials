@@ -2,7 +2,13 @@ data.forEach((element, i) =>
 {
     const main = document.querySelector(".main");
     const card = document.createElement('div');
+    let clink = document.getElementById("cardbody");
     card.classList = "card";
+
+    clink.addEventListener("click", function() {
+        window.open(data[i].link);
+    })
+
     var btns="";
     if(data[i].button){
         data[i].button.forEach((tags)=> 
@@ -14,7 +20,7 @@ data.forEach((element, i) =>
     <div class="top">
         <div class="videoNumber">${data[i].no}</div>
         <img src="${data[i].image}" alt="img">
-        <div class="timing">${data[i].image}</div>
+        <div class="timing">${data[i].date}</div>
     </div>
     <div class="middle">
         <p class="title">${data[i].title}</p>
@@ -23,7 +29,10 @@ data.forEach((element, i) =>
     </div>
     <div class="bottom">
         ${btns}
-    </div>`  ;
+    </div>
+    `  ;
+
+    
     
     card.innerHTML += viedoCard;
     main.appendChild(card);
