@@ -21,12 +21,14 @@ const data = [
         Codepage: "Hello",
         codelive: "hello",
         image: "/Social Media Button Hover Effect/png1.jpg",
+        link:"https://github.com",
         button: [
             "HTML",
             "CSS",
             "JavaScript",
             "jQuery"
         ]
+        
 
     },
     {

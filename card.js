@@ -2,10 +2,12 @@ data.forEach((element, i) =>
 {
     const main = document.querySelector(".main");
     const card = document.createElement('div');
-    let clink = document.getElementById("cardbody");
-    card.classList = "card";
 
-    clink.addEventListener("click", function() {
+    card.classList = "card";
+    
+    
+
+    card.addEventListener("click", function() {
         window.open(data[i].link);
     })
 
