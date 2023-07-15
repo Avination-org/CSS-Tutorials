@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,#60d43d, #0c6908);
+
+}
+html{
+    font-size: 16px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vmin;
+}
+.heading h1{
+    font-size: 6vmin;
+}
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option{
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #36d620;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart{
+    font-size: 1.3em;
+    padding: 1em;
+     border-radius: 8px;
+     background-color: black;
+     color: white;
+     border: none;
+     position: relative;
+     margin: 1.5em auto 0 auto;
+     display: block;
+}
+
+.popup{
+    font-size: 12vmin;
+    gap: 1em;
+    background: linear-gradient(135deg,#60d43d, #0c6908) ;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     display: flex;
+     z-index: 2;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+}
+
+#new-game{
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 0.2em;
+    border: none;
+
+}
+#message{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.popup.hide{
+    display: none;
+}
