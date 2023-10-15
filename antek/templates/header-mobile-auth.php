@@ -1,1 +1,0 @@
-<?php echo ideapark_get_account_link(); ?>
