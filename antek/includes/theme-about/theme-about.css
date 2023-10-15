@@ -1,0 +1,174 @@
+.ideapark_about {
+	margin:                 2em 2em 0 0;
+	padding:                6em 3em;
+	background-color:       #fff;
+	border:                 1px solid #ddd;
+	-webkit-border-radius:  2px;
+	-ms-border-radius:      2px;
+	border-radius:          2px;
+	display:                -webkit-flex;
+	display:                -ms-flexbox;
+	display:                flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction:     column;
+	flex-direction:         column;
+	-webkit-align-content:  center;
+	-ms-flex-line-pack:     center;
+	align-content:          center;
+	text-align:             center;
+	max-width:              750px;
+	margin-left:            auto;
+	margin-right:           auto;
+}
+
+.ideapark_about_description p {
+	font-size: 1.25em;
+}
+
+.ideapark_plugins_installer_success p {
+	color:       darkgreen;
+	font-size:   1.35em;
+	line-height: 30px;
+}
+
+.ideapark_plugins_installer_success span {
+	font-size:    2em;
+	display:      inline-block;
+	margin-right: 10px;
+}
+
+.ideapark_about .hidden {
+	visibility: hidden;
+	opacity:    0;
+	position:   absolute;
+	z-index:    -1;
+}
+
+.ideapark_about_logo {
+	margin: 0 0 2em 0;
+}
+
+.ideapark_about_logo img {
+	max-width: 30%;
+	height:    auto;
+}
+
+.ideapark_about_title {
+	margin-top:  0;
+	line-height: 1.5em;
+}
+
+.ideapark_about_description {
+	margin-bottom: 3em;
+	line-height:   1.5em;
+}
+
+.ideapark_about_description p {
+	font-size:   1.25em;
+	line-height: 1.7em;
+	margin:      0.5em 0 0;
+}
+
+.ideapark_about_description b,
+.ideapark_about_description strong {
+	color: #333;
+}
+
+.ideapark_about .button {
+	height:         40px;
+	line-height:    38px;
+	padding-left:   16px;
+	padding-right:  16px;
+	font-size:      15px;
+	padding-top:    0;
+	padding-bottom: 0;
+}
+
+.ideapark_plugins_installer_link.button.updating-message:before {
+	line-height: 38px;
+	margin-top:  1px;
+}
+
+.ideapark_about_notes {
+	margin-top: 5em;
+	color:      #ccc;
+}
+
+.ideapark_about_notes p {
+	font-size:   1.0em;
+	line-height: 1.7em;
+	margin:      0.5em 20% 0;
+}
+
+.ideapark_about .plugins_list {
+
+}
+
+.ideapark_about .plugins_list__item {
+	font-size:   14px;
+	line-height: 1.2;
+}
+
+.ideapark_about .action_name {
+	font-size:     11px;
+	line-height:   1.2;
+	display:       block;
+	margin-bottom: 10px;
+	padding-left:  25px;
+	color:         #aaa;
+}
+
+.ideapark_plugins_installer_error {
+	color:          red;
+	padding-top:    15px;
+	padding-bottom: 15px;
+}
+
+.ideapark_plugins_installer_error:empty {
+	display: none;
+}
+
+.ideapark_about_next_step {
+	display:         flex;
+	flex-wrap:       nowrap;
+	margin-left:     auto;
+	margin-right:    auto;
+	margin-top:      45px;
+	justify-content: center;
+}
+
+.ideapark_about_next_step .step {
+	flex:       1 1 auto;
+	width:      50%;
+	font-size:  1.25em;
+	text-align: left;
+	max-width:  200px;
+}
+
+.ideapark_about_next_step .step + .step {
+	margin-left: 70px;
+}
+
+
+@media (max-width: 782px) {
+	.ideapark_about_next_step {
+		flex-wrap: wrap;
+	}
+
+	.ideapark_about_next_step .step {
+		max-width:     235px;
+		width:         auto;
+		margin-bottom: 40px;
+		min-height:    auto;
+		padding-left:  15px;
+		padding-right: 15px;
+	}
+
+	.ideapark_about_next_step .step p {
+		min-height: 0;
+	}
+
+	.ideapark_about_next_step .step + .step {
+		margin-left: 0;
+	}
+}

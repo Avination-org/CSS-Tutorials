@@ -1,0 +1,75 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">catalog</custom-type>
+		<custom-type translate="1">html_block</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">vehicle_type</taxonomy>
+		<taxonomy translate="1">extra_option</taxonomy>
+		<taxonomy translate="0">detail</taxonomy>
+		<taxonomy translate="1">location</taxonomy>
+		<taxonomy translate="0">condition</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate">subheader</custom-field>
+		<custom-field action="copy">price</custom-field>
+		<custom-field action="copy">price_week</custom-field>
+		<custom-field action="copy">price_month</custom-field>
+		<custom-field action="copy">price_delivery</custom-field>
+		<custom-field action="copy">price_on_request</custom-field>
+		<custom-field action="copy">price_cond</custom-field>
+		<custom-field action="translate">fuel-consumption</custom-field>
+		<custom-field action="translate">make</custom-field>
+		<custom-field action="translate">model</custom-field>
+		<custom-field action="translate">sale</custom-field>
+		<custom-field action="translate">video_url</custom-field>
+		<custom-field action="copy">header_bg_image</custom-field>
+		<custom-field action="copy">_ip_banner_hide_title</custom-field>
+		<custom-field action="copy">_ip_banner_shortcode</custom-field>
+		<custom-field action="copy">_ip_banner_shortcode_placement</custom-field>
+		<custom-field action="translate">_ip_banner_subheader</custom-field>
+		<custom-field action="translate">_ip_banner_button_text</custom-field>
+		<custom-field action="copy">_ip_banner_button_link</custom-field>
+		<custom-field action="copy">_ip_banner_color</custom-field>
+		<custom-field action="copy">_ip_banner_background_color</custom-field>
+		<custom-field action="translate">_ip_product_extra_info</custom-field>
+		<custom-field action="copy">_ip_product_video_url</custom-field>
+		<custom-field action="copy">image_gallery</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="theme_mods_antek">
+			<key name="catalog_base"/>
+			<key name="type_base"/>
+			<key name="catalog_list_header"/>
+			<key name="favorites_header"/>
+			<key name="price_block_title"/>
+			<key name="price_block_tax"/>
+			<key name="reserve_button_title_list"/>
+			<key name="delivery_title_list"/>
+			<key name="catalog_item_header"/>
+			<key name="reserve_button_title_item"/>
+			<key name="delivery_title_item"/>
+			<key name="request_shortcode"/>
+            <key name="request_shortcode_field_name" />
+            <key name="filter_button_text" />
+			<key name="price_on_request_label"/>
+			<key name="price_on_request_button"/>
+			<key name="price_on_request_shortcode"/>
+			<key name="price_on_request_field_name"/>
+			<key name="header_support_title"/>
+			<key name="header_support_phone"/>
+			<key name="header_phone"/>
+			<key name="header_email"/>
+			<key name="header_address"/>
+			<key name="header_hours"/>
+			<key name="header_callback"/>
+			<key name="header_callback_title"/>
+			<key name="header_callback_shortcode"/>
+			<key name="header_other"/>
+			<key name="footer_copyright"/>
+			<key name="product_header"/>
+			<key name="product_price_block_title"/>
+			<key name="product_price_block_tax"/>
+		</key>
+	</admin-texts>
+</wpml-config>
